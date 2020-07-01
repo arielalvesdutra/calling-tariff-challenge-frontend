@@ -15,13 +15,15 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .App-link {
@@ -35,4 +37,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.calculate-and-callTariffMaps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.calculate-form {
+  max-width: 500px;
+}
+
+.calculate-minutes-selection,
+.calculate-origin-selection,
+.calculate-destination-selection,
+.calculate-plan-selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculate-result-value {
+  font-size: 2.6rem;
+  color: midnightblue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.calculate-result-sign {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.callTariffMaps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.callTariffMaps-list {
+  list-style-type: none;
+  max-width: 500px;
+  padding: 0;
+}
+
+
+.callTariffMaps-item {
+  border-bottom: 1px solid black;
+  padding: 10px 10px 5px 10px;
+}
+
+.callTariffMaps-item:nth-child(2n) {
+  background: rgb(219, 223, 243);
 }
